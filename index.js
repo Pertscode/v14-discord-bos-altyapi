@@ -10,7 +10,7 @@ const client = new Client({
     Partials.GuildScheduledEvent, // for guild events
     Partials.User, // for discord user
     Partials.ThreadMember, // for thread member
-  ],
+  ],//Buraları ingilizce Yaptım Buralara Takılmayınız
   intents: [
     GatewayIntentBits.Guilds, // for guild related things
     GatewayIntentBits.GuildMembers, // for guild members related things
@@ -28,23 +28,23 @@ const client = new Client({
     GatewayIntentBits.DirectMessageReactions, // for dm message reaction
     GatewayIntentBits.DirectMessageTyping, // for dm message typinh
     GatewayIntentBits.MessageContent, // enable if you need message content things
-  ],
-});
+  ],//Perts Code
+});//Perts Code
 
 module.exports = client;
 
-require("./events/message.js")
-require("./events/ready.js")
+require("./events/message.js")//Perts Code
+require("./events/ready.js")//Perts Code
 
 client.login(config.token || process.env.TOKEN).catch(e => {
-console.log("The Bot Token You Entered Into Your Project Is Incorrect Or Your Bot's INTENTS Are OFF!")
+console.log("Token Yanlış Bot Kapalı!") //Perts Code
 })
 
 
 const express = require("express");
-const app = express();
-const http = require("http");
+const app = express();//Perts Code
+const http = require("http");//Perts Code
 app.get("/", (request, response) => {
-  response.sendStatus(200);
+  response.sendStatus(200);//Perts Code
 });
-app.listen(process.env.PORT);
+app.listen(process.env.PORT);//Perts Code

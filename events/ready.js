@@ -3,8 +3,8 @@ const { Collection } = require("discord.js")
 const fs = require("fs")
 
 client.on("ready", () => {
-console.log(`${client.user.tag} Bot Online!`)
-client.user.setActivity(`Umut Bayraktar ♥ Code Share`)
+console.log(`${client.user.tag} Bot Aktif!`)
+client.user.setActivity(`Perts Code♥`)
 
 client.commands = new Collection();
 client.aliases = new Collection();
@@ -14,7 +14,7 @@ console.log(`${files.length} Total Command!`);
 files.forEach(f => {
 let props = require(`../commands/${f}`);
     
-console.log(`${props.help.name} Named Command Online!`);
+console.log(`${props.help.name} Adlı Komut Aktif!`);
     
 client.commands.set(props.help.name, props);
 props.conf.aliases.forEach(alias => {

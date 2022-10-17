@@ -1,8 +1,8 @@
 const { EmbedBuilder } = require("discord.js");
 var config = require("../config.js");
 const client = require("..");
-const prefix = config.prefix;
-
+const prefix = config.prefix; //Perts Code
+//Perts Code
 client.on("messageCreate", async (message) => {
   if (!message.guild) return;
   if (message.author.bot) return;
@@ -20,3 +20,4 @@ client.on("messageCreate", async (message) => {
   }
 
 });
+//Perts Code
